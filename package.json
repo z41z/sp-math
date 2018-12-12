@@ -1,0 +1,22 @@
+{
+  "name": "sp-math",
+  "version": "1.0.0",
+  "description": "Common Math Functions",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build && webpack --mode production --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z41z/sp-math.git"
+  },
+  "keywords": [
+    "math"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/z41z/sp-math/issues"
+  },
+  "homepage": "https://github.com/z41z/sp-math#readme"
+}
