@@ -1,6 +1,6 @@
 {
   "name": "sp-math",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Common Math Functions",
   "main": "index.js",
   "scripts": {

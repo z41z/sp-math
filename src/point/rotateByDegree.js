@@ -1,3 +1,6 @@
+const cos = require("../cos");
+const sin = require("../sin");
+
 /**
  * x,y旋转后坐标计算
  * @param {Number} _x 
