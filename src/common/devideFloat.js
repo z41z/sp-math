@@ -36,10 +36,10 @@ const shortDevide = (child, mother) => {
     c = child;
     m = mother;
   }
-  return {
+  return [
     c,
     m
-  }
+  ]
 }
 
 module.exports.default = module.exports = devideFloat;
