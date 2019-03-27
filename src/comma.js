@@ -5,22 +5,22 @@
  */
 const comma = (value = '', obj = {}) => {
   let {
-    fixedLen = 2, hasComma = false
+    fixed = 2, hasComma = false
   } = obj;
 
   // add comma
   if (hasComma && (+value)) {
-    let fixed = (+value).toFixed(fixedLen).split('.');
-    if (fixedLen > 0) {
-      return `${(+fixed[0]).toLocaleString()}.${fixed[1]}`;
+    let fix = (+value).toFixed(fixed).split('.');
+    if (fixed > 0) {
+      return `${(+fix[0]).toLocaleString()}.${fix[1]}`;
     } else {
-      return (+fixed[0]).toLocaleString();
+      return (+fix[0]).toLocaleString();
     }
 
   // remove comma
   } else {
     let num = +((value.toString()).replace(/\,/ig, ''));
-    return num ? num.toFixed(fixedLen) : (0).toFixed(fixedLen)
+    return num ? num.toFixed(fixed) : (0).toFixed(fixed)
   }
 }
 
