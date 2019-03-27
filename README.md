@@ -33,7 +33,7 @@ Common Math Functions
     cos,
     distance,
     floor,
-    money,
+    comma,
     rotateByDegree,
     pow,
     round,
@@ -185,24 +185,24 @@ Common Math Functions
     // return [ 9, 5 ] 9/5 = 1.8
   ```
 
-* money(val, obj = {fixedLen:2, hasComma = false})
+* comma(val, obj = {fixed:2, hasComma = false})
   * {Number} val
   * {Object} obj
-  * {Number} obj.fixedLen
+  * {Number} obj.fixed
   * {Boolean} obj.hasComma
 
   ``` js
-    money('12345.33',{
-      fixedLen: 3
+    comma('12345.33',{
+      fixed: 3
     });
     // return '12345.330'
-    money('12345.33',{
-      fixedLen: 3,
+    comma('12345.33',{
+      fixed: 3,
       hasComma: true
     });
     // return '12,345.330'
-    money('12,345.330',{
-      fixedLen: 4,
+    comma('12,345.330',{
+      fixed: 4,
       hasComma: false
     });
     // return '12345.3300'

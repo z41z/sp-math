@@ -1,9 +1,9 @@
 /**
- * tras money
+ * tras comma
  * @param {String||Number} value 
  * @param {*} obj 
  */
-const money = (value = '', obj = {}) => {
+const comma = (value = '', obj = {}) => {
   let {
     fixedLen = 2, hasComma = false
   } = obj;
@@ -24,4 +24,4 @@ const money = (value = '', obj = {}) => {
   }
 }
 
-module.exports.default = module.exports = money;
+module.exports.default = module.exports = comma;
